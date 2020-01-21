@@ -37,12 +37,15 @@ PIXI.loader
         app.stage.addChild(background);
 
         // cat
-        let sprite = new PIXI.Sprite(
+        let cat = new PIXI.Sprite(
             PIXI.loader.resources["assets/images/pixcat.png"].texture
         );
-        sprite.width=128;
-        sprite.height=128;
-        app.stage.addChild(sprite);
+        cat.width=128;
+        cat.height=128;
+        cat.position.x=(200);
+        cat.position.y=(140);
+        cat.anchor.set(0.5);
+        app.stage.addChild(cat);
 
         //update
         app.ticker.add((delta)=>{
@@ -51,5 +54,7 @@ PIXI.loader
 
         });
 });
+
+
 
 //
