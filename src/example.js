@@ -19,7 +19,7 @@ let app = new PIXI.Application({
 document.body.appendChild(app.view);
 
 PIXI.loader
-    .add("assets/images/peng.png")
+    .add("assets/images/pixcat.png")
     .add("assets/images/nebula.png")
     .load(()=>{
 
@@ -38,7 +38,7 @@ PIXI.loader
 
         // cat
         let cat = new PIXI.Sprite(
-            PIXI.loader.resources["assets/images/peng.png"].texture
+            PIXI.loader.resources["assets/images/pixcat.png"].texture
         );
         cat.width=128;
         cat.height=128;
